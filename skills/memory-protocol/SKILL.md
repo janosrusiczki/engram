@@ -41,6 +41,7 @@ Use stable `topic_key` for evolving topics.
 
 - On recall requests: `mem_context` first, then `mem_search`.
 - Before similar work: run proactive `mem_search`.
+- On first message: if user references the project, a feature, or a problem, call `mem_search` with their keywords before responding.
 
 ---
 

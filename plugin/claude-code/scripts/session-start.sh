@@ -62,6 +62,7 @@ Call `mem_save` IMMEDIATELY after ANY of these:
 - User asks to recall anything ("remember", "what did we do", "acordate", "qué hicimos")
 - Starting work on something that might have been done before
 - User mentions a topic you have no context on
+- User's FIRST message references the project, a feature, or a problem — call `mem_search` with keywords from their message to check for prior work before responding
 
 ### SESSION CLOSE — before saying "done"/"listo":
 Call `mem_session_summary` with: Goal, Discoveries, Accomplished, Next Steps, Relevant Files.

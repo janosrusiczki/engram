@@ -55,10 +55,19 @@ Call \`mem_session_summary\` with: Goal, Discoveries, Accomplished, Next Steps, 
 
 ---
 
-CRITICAL INSTRUCTION POST-COMPACTION:
-FIRST ACTION REQUIRED: Call mem_session_summary with the content of the compacted summary above. Use project: '${PROJECT}'.
-This preserves what was accomplished before compaction. Do this BEFORE any other work.
-This is NOT optional. Without this, everything done before compaction is lost from memory.
+CRITICAL INSTRUCTION POST-COMPACTION — follow these steps IN ORDER:
+
+1. FIRST: Call mem_session_summary with the content of the compacted summary above. Use project: '${PROJECT}'.
+   This preserves what was accomplished before compaction.
+
+2. THEN: Call mem_context with project: '${PROJECT}' to recover recent session history and observations.
+   Read the returned context carefully — it tells you what was being worked on.
+
+3. If you need more detail on a specific topic, call mem_search with relevant keywords.
+
+4. Only THEN continue working on what the user asked.
+
+All 4 steps are MANDATORY. Without them, you lose context and start blind.
 
 ${CONTEXT}
 PROTOCOL
