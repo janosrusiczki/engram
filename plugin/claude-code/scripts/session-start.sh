@@ -47,7 +47,7 @@ This protocol is MANDATORY and ALWAYS ACTIVE.
 
 ### FIRST ACTION — load memory tools
 Memory tools are deferred and must be loaded before use. Call ToolSearch NOW with:
-select:mcp__plugin_engram_engram__mem_save,mcp__plugin_engram_engram__mem_context,mcp__plugin_engram_engram__mem_search,mcp__plugin_engram_engram__mem_session_summary
+select:mcp__plugin_engram_engram__mem_save,mcp__plugin_engram_engram__mem_context,mcp__plugin_engram_engram__mem_search,mcp__plugin_engram_engram__mem_session_summary,mcp__plugin_engram_engram__mem_session_end
 
 ### PROACTIVE SAVE — do NOT wait for user to ask
 Call `mem_save` IMMEDIATELY after ANY of these:
